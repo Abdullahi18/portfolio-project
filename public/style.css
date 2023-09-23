@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.menu-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.menu-item {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    transition: all .5s ease-in-out;
+}
+
+.menu-item:hover {
+    color: #08e8de;
+    letter-spacing: 5px;
+   
+}
+
+.checked {
+    color: #08e8de;
+}
+
+
+
+.left-side-hero{
+    background: rgb(253,246,199);
+    background: linear-gradient(90deg, rgba(253,246,199,1) 47%, rgba(250,214,165,1) 83%);
+    height: 100%;
+    filter: blur();
+}
+
+.right-side-hero {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 5rem;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+}
+
+span {
+    color: #08e8de;
+}
+
+.download-btn {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    transition: all .5s ease-in-out;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: 1px solid #000;
+    margin-top: 10rem;
+}
+
+.download-btn:hover{
+    background: #FDF6C7;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.rocket {
+    position: absolute;
+    width: 5rem;
+    left: 0%;
+    bottom: 0;
+    animation: rocket 8s linear infinite ;
+    top: 290%;
+}
+
+#about{
+    background-color: #000;
+    color: #fff;
+}
+
+.about-h1{
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.about-p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.icons{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+.icon {
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.work-link{
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    color: #000;
+
+    outline: none;
+    font-size: 10px;
+}
+
+.work-link:hover{
+    letter-spacing: 2px;
+
+}
+
+
+
+
+.slider-p {
+    margin: 0;
+}
+
+.slider-container{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 40vh;
+}
+
+.left-side-slider {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+}
+
+.left-side-slider > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side-slider {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 60%;
+    left: 40%;
+    transition: transform .5s ease-in-out;
+}
+
+.right-side-slider > div {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 5px;
+}
+
+button:hover {
+    color: #222;
+    
+}
+
+button:focus{
+    outline: none;
+}
+
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    z-index: 100;
+
+}
+
+.slider-container .action-buttons .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+.slider-container .action-buttons .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.price-card {
+    width: 30%;
+    padding: 40px 20px;
+    border: 1px solid #aaa;
+    margin-right: 2rem;
+    transition: transform .5s ease-in-out;
+}
+
+.price-card:hover{
+    border: 1px solid #08e8de;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.title {
+    margin: 0;
+}
+
+.subtitle {
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+
+.header {
+    background-color: #3e57db;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.header input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 50%;
+}
+
+.header input:focus{
+    outline: none;
+}
+
+.user-list {
+    background-color: #fff;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0;
+
+}
+
+.user-list li {
+    display: flex;
+    padding: 20px;
+
+}
+
+.user-list img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    margin: auto 2rem;
+}
+
+.user-list .user-info {
+    margin-left: 10px;
+}
+
+.user-list .user-info h4 {
+    margin: 0 0 10px;
+}
+
+.user-list .user-info p {
+    font-size: 12px;
+}
+
+.user-list li:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.user-list li.hide {
+    display: none;
+}
+
+.std {
+    border: 1px solid #aaa;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.left-courses{
+    margin: auto 0;
+}
+
+
+.art-card {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    width: 300px;
+    margin: auto;
+}
+
+.art-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#art-link {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    transition: all .5s ease-in-out;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: 1px solid #000;
+    margin: 1rem auto;
+    display: block;
+    
+}
+
+#art-link:hover{
+    background: #FDF6C7;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.art-excerpt {
+    opacity: .6;
+}
+
+.author {
+    display: flex;
+    gap: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+.profile-img {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+}
+
+
+.animated-bg {
+    background-image: linear-gradient(to right, #f6f7f8 0%,
+    #edeef1 10%, #f6f7f8 20%, #f6f7f8 100% );
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
+    width: 100%;
+}
+
+@keyframes bgPos {
+    0% {
+        background-position: 50% 0;
+    }
+    100% {
+        background-position: -150% 0;
+    }
+}

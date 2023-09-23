@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap.min.js" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dd54846db2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row g-4">
+        <div class="col-md-6 left-side-hero" id="blur-side">
+          <nav id="navbar">
+            <ul class="menu-items border-bottom">
+              <li>
+                <h5><a href="#" class="menu-item checked">HOME</a></h5>
+              </li>
+              <li>
+                <h5><a href="#work" class="menu-item">WORK</a></h5>
+              </li>
+              <li>
+                <h5><a href="#about" class="menu-item">ABOUT</a></h5>
+              </li>
+              <li>
+                <h5><a href="#" class="menu-item">CONTACT</a></h5>
+              </li>
+            </ul>
+          </nav>
+          <img src="public/images/showcase-img.png" class="img-fluid" alt="" />
+          <!-- <img src="images/rocket.png" class="rocket" alt=""> -->
+        </div>
+        <div
+          class="col-md-6 right-side-hero d-none d-md-block"
+          id="opacity-side"
+        >
+          <h1 class="display-6">
+            <span>Hello there</span>, Welcome to my portfolio
+          </h1>
+          <p class="lead py-3">
+            I am Abdullahi, a Web developer who specializes in the frontend part
+            of programming.
+          </p>
+
+          <h1>
+            <a href="#" class="display-5 download-btn mt-3">Download Resume</a>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="work" class="bg-dark text-light pt-3">
+        <div class="containerr">
+          <h1 class="display-6 about-h1 text-center py-3">
+            Check out my <span>Projects</span>
+          </h1>
+          <p class="lead text-center">
+            Click on the arrow to change each slide
+          </p>
+          <!-- slider container -->
+          <div class="slider-container">
+            <div class="left-side-slider">
+              <div style="background-color: #08e8de">
+                <h6 class="text-dark">Game Development</h6>
+                <p class="py-3 text-dark slider-p text-center">
+                  Using Javascript to build 2d games
+                </p>
+                <a href="#" class="work-link"
+                  >View Project <i class="fa-solid fa-paper-plane"></i
+                ></a>
+              </div>
+              <div style="background-color: #aaa">
+                <h6 class="text-dark">Stunning Websites</h6>
+                <p class="py-3 text-dark slider-p text-center">
+                  Responsive to all screen sizes
+                </p>
+                <a href="#" class="work-link"
+                  >View Project <i class="fa-solid fa-paper-plane"></i
+                ></a>
+              </div>
+              <div style="background-color: #ddd">
+                <h6 class="text-dark">Mobile Application</h6>
+                <p class="py-3 text-dark slider-p text-center">
+                  Clean UI/UX web app for an e-commerce store
+                </p>
+                <a href="#" class="work-link"
+                  >View Project <i class="fa-solid fa-paper-plane"></i
+                ></a>
+              </div>
+            </div>
+            <div class="right-side-slider">
+              <div
+                style="
+                  background: url(public/images/ui-design.jpg) no-repeat center
+                    center/cover;
+                "
+              ></div>
+              <div
+                style="
+                  background: url(public/images/responsive-interface\ \(1\).jpg)
+                    no-repeat center center/cover;
+                "
+              ></div>
+              <div
+                style="
+                  background: url(public/images/game\ dev.jpg) no-repeat center
+                    center/cover;
+                "
+              ></div>
+            </div>
+            <div class="action-buttons">
+              <button class="down-button">
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <button class="up-button">
+                <i class="fa-solid fa-caret-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="courses">
+        <div class="container-fluid">
+          <h1 class="display-6 about-h1 text-center py-3">View My Courses</h1>
+          <div class="row g-4">
+            <div class="col-md-6">
+              
+              <p class="lead py-3">
+                I have sucessfully taught over <span>500</span> students from all over the world with 
+                different nationalities. Most of which who have their own start-ups now or 
+                are in the developer position of an organisation. <br>
+                You can find some of my students below.
+              </p>
+              <div class="std">
+                <div class="header">
+                  <h4 class="title">Students I have taught</h4>
+                  <p class="subtitle py-3">
+                      Search by name or loacation
+                  </p> <br>
+                  <input type="text" id="filter" placeholder="Search">
+                </div>
+      
+                <ul id="result" class="user-list">
+                  
+                  <li>
+                      <h3>Loading...</h3>
+                  </li>
+                </ul>
+              </div>
+
+
+            </div>
+
+            
+            <div class="col-md-6  d-flex d-none d-lg-flex left-courses">
+              <div class="price-card" style="height: 25rem;">
+                <h3 class="about-h1 text-center">$99.9</h3>
+              <p class="lead py-3 about-p">
+                For the full package which consists of HTML, CSS AND JavaScript.
+                In this course you will be able to build a fully fledged website on your own.
+              </p>
+              <div class="text-center">
+                <i
+                  class="fa-brands fa-html5 icon fa-2x"
+                  style="color: #005eff; margin-right: 1rem;" 
+                ></i>
+                <i
+                  class="fa-brands fa-css3 icon fa-2x"
+                  style="color: #ff0019; margin-right: 1rem;"
+                ></i>
+                <i
+                  class="fa-brands fa-js icon fa-2x"
+                  style="color: #fff70a"
+                ></i>
+              </div>
+              </div>
+              <div class="price-card " style="height: 25rem;">
+                <h3 class=" about-h1 text-center">$69.9</h3>
+              <p class="lead py-3 about-p">
+                Learning CSS thoroughly going through all the fun animations CSS has to offer 
+                in addition to the HTML.
+              </p>
+              <div class="text-center">
+                <i
+                  class="fa-brands fa-html5 icon fa-2x"
+                  style="color: #005eff; margin-right: 1rem;"
+                ></i>
+                <i
+                  class="fa-brands fa-css3 icon fa-2x"
+                  style="color: #ff0019"
+                ></i>
+                
+              </div>
+              </div>
+              <div class="price-card" style="height: 25rem;">
+                <h3 class=" about-h1 text-center">$59.9</h3>
+              <p class="lead py-3 about-p">
+                We will be going through the basics of website development with just HTML.
+              </p>
+              <div class="text-center">
+                <i
+                  class="fa-brands fa-html5 icon fa-2x"
+                  style="color: #005eff"
+                ></i>
+              </div>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </section>
+      <section id="about" class="mt-5 py-5">
+        <div class="container-fluid">
+          <h1 class="display-6 about-h1">About Abdullahi</h1>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <p class="lead py-3 about-p">
+                I typically use a combination of HTML , CSS AND JavaScript to
+                create dynamic and responsive web pages. I have a solid
+                understanding of these languages, as well as over 5 years
+                experience in this field I am familiar with popular frontend
+                frameworks for all the languages.
+              </p>
+              <div class="icons d-md-none">
+                <i
+                  class="fa-brands fa-html5 icon fa-2x"
+                  style="color: #005eff"
+                ></i>
+                <i
+                  class="fa-brands fa-css3 icon fa-2x"
+                  style="color: #ff0019"
+                ></i>
+                <i
+                  class="fa-brands fa-js icon fa-2x"
+                  style="color: #fff70a"
+                ></i>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="lead py-3 about-p">
+                I know how to create user-friendly interfaces that are easy to
+                use. <br />
+                In addition to all these, in my opinion to be a good web
+                developer you need to be able to communicate effectively with
+                designers, developers and other members of your team to ensure
+                that their work meets the needs of the project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section id="ad">
+        <div class="container-fluid py-5">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h1 class="display-6 about-h1"><span>
+                SPONSORED AD
+              </span></h1>
+              <h3 class="fw-light mt-5">
+                This Portfolio is sponsored by an Art Gallery and a photography studio
+                , Check out some of their works.
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <div class="art-card">
+                <div id="artImage" class="animated-bg" style="width: 300px; height: 200px; margin-bottom: 1rem;">
+                 
+                  &nbsp;
+                </div>
+                <div class="art-content px-3">
+                  <h6 class=" py-3 art-title animated-bg animated-bg-text" id="title">
+                    &nbsp;
+                  </h6>
+                  <p class="art-excerpt" id="excerpt">
+                    &nbsp;
+                    <span class="animated-bg animated-bg-text">&nbsp;</span>
+                    <span class="animated-bg animated-bg-text">&nbsp;</span>
+                    <span class="animated-bg animated-bg-text">&nbsp;</span>
+                  </p>
+                  <div class="author">
+                    <div class="profile-img animated-bg" id="profile_img">
+                      &nbsp;
+                    </div>
+                    <div class="author-info">
+                      <strong class="animated-bg animated-bg-text" id="art-name">
+                        &nbsp;
+                      </strong>
+                      <small class="animated-bg animted-bg-text" id="art-email">
+                        &nbsp;
+                      </small>                      
+                    </div>
+                  </div>
+                  <a href="#ad" id="art-link">view another artwork</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section> -->
+      
+    </main>
+
+    <script src="public/index.js"></script>
+  </body>
+</html>
